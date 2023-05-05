@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,4 +61,31 @@ body {
 
 .num:hover {
   opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .value {
+    font-size: 1.2rem;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .num {
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 38px;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 40px;
+  }
+
+  .num.equal i {
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
 }
